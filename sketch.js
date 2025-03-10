@@ -26,6 +26,7 @@ function setup() {
   dropdown.option('第一周-淡江大學網頁');
   dropdown.option('第二周-淡江大學教育科技學系網頁');
   dropdown.option('第三周-Hackmd網頁');
+  dropdown.option('第四周-數學選擇題與填充小測驗');
   dropdown.changed(handleDropdownChange); // Set the dropdown's changed event
   
   iframe = createElement('iframe');
@@ -68,6 +69,8 @@ function handleDropdownChange() {
     iframe.attribute('src', 'https://www.et.tku.edu.tw');
   } else if (selected === '第三周-Hackmd網頁') {
     iframe.attribute('src', 'https://hackmd.io/@YyFThXCPSWyphIjJu2XjOQ/HJLSmYzj1x');
+  } else if (selected === '第四周-數學選擇題與填充小測驗') {
+    iframe.attribute('src', 'https://alunisme.github.io/test20250310/');
   }
   iframe.show(); // Show the iframe
 }
